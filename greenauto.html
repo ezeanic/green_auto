@@ -8,12 +8,11 @@
     <h1 style="font-size:30px">Welcome to GreenAuto</h1>
     <p>Please input some information about your car:</p>
    
-    <form>
+    <form action="engr_connect.php" method="post">
 <h3> Car Information</h3>
 <input placeholder="Enter make" value="Toyota" id = "car_make"><br/><br/>
     <input placeholder="Enter model" value="Prius" id = "car_model"><br/><br/>
     <input placeholder="Enter year of car" value="2002" id = "car_year"><br/><br/>
-    </form>
    
     <p>How far are you driving between oil changes?</p>
     <input placeholder="Enter in miles" id = "oil_mileage"><br/><br/><br/>
@@ -22,6 +21,9 @@
     <h2 style="font-size:20px">Driving Data</h2>
     <p>Average Miles per Gallon (MPG):</p>
     <p>Miles until next oil change:</p>
+    <p>Enter time stamp:</p><input name="searchterm" type="text" id = "time_stamp"><br/>
+    <p><input type="submit" name="submit" value="Submit"></p><br/><br/>
+   </form>
    
     <label for="date">Select a date:</label>
   <select name="date" id="data">
@@ -31,6 +33,18 @@
     <option value="half_year">Past 6 months</option>
   </select><br/><br/>
     <!--<input type="file" name="car">-->
+
+<h3> Driving Tips</h3>
+<p>Don't drive.</p>
+<p>Stop drinking and driving.</p>
+<p>You need a license.</p>
+
+<label for="date">Select a date:</label>
+  <select name="date" id="data">
+    <option value="today">Today</option>
+    <option value="week">Past week</option>
+    <option value="month">Past month</option>
+    <option value="half_year">Past 6 months</option>
   </select><br/><br/>
 
 </body>
