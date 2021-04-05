@@ -40,10 +40,12 @@
      }
      
     
-    $db->close();
+    
+    // $stmt->free_result();
+    $conn->close();
   ?>
+  
 
   
 </body>
 </html>
-
